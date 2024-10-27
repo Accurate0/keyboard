@@ -1,5 +1,4 @@
 #include "accurate0.h"
-#include "print.h"
 
 #define KEEPALIVE_TIME_BETWEEN (1 * 60)
 
@@ -21,7 +20,6 @@ void matrix_scan_user(void) {
         // send a f13 every minute when this is enabled
         _globals.keepalive.last_keepalive = timer_read32();
         // gnome has a keybind for F13...
-        print("working");
         tap_code(KC_F24);
     }
 }
