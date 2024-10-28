@@ -5,6 +5,7 @@ enum custom_keycodes {
 };
 
 typedef struct {
+    bool is_mac_os;
     struct {
         bool enabled;
         uint32_t last_keepalive;

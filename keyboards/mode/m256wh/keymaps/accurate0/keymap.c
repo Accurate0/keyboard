@@ -37,23 +37,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_LCTL , KC_LGUI , KC_LALT ,                          KC_SPC                          , KC_RALT , MO(1)   ,           KC_LEFT , KC_DOWN , KC_RGHT
 ),
 
-//    ┌─────────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────┬─────┬──────┬─────┬───────────────────┬──────┐
-//    │ QK_BOOT │ f1  │ f2  │ f3  │ f4  │ f5  │ f6  │ f7  │ f8  │  f9  │ f10 │ f11  │ f12 │        f13        │      │
-//    ├─────────┴─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼──────┼─────┼──────┼─────┼─────┬─────────────┼──────┤
-//    │               │     │     │     │     │     │     │     │      │     │ mply │     │     │             │      │
-//    ├───────────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼──────┼─────┼──────┼─────┼─────┴─────────────┼──────┤
-//    │               │     │     │     │     │     │     │     │ kAL  │     │      │     │                   │      │
-//    ├───────────────┴─────┼─────┼─────┼─────┼─────┼─────┼─────┼──────┼─────┼──────┼─────┼────────────┬──────┼──────┤
-//    │                     │     │     │     │     │     │     │ mute │     │      │     │            │ volu │      │
-//    ├─────────┬─────┬─────┼─────┴─────┴─────┴─────┴─────┴─────┴──────┴─────┼──────┼─────┼─────┬──────┼──────┼──────┤
-//    │         │     │     │                                                │      │     │     │ mprv │ vold │ mnxt │
-//    └─────────┴─────┴─────┴────────────────────────────────────────────────┴──────┴─────┘     └──────┴──────┴──────┘
+//    ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬──────┬─────┬──────┬─────┬───────────────────┬──────┐
+//    │  `  │ f1  │ f2  │ f3  │ f4  │ f5  │ f6  │ f7  │ f8  │  f9  │ f10 │ f11  │ f12 │        f13        │      │
+//    ├─────┴─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼──────┼─────┼──────┼─────┼─────┬─────────────┼──────┤
+//    │  QK_BOOT  │     │     │     │     │     │     │     │      │     │ mply │     │     │             │      │
+//    ├───────────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼──────┼─────┼──────┼─────┼─────┴─────────────┼──────┤
+//    │           │     │     │     │     │     │     │     │ kAL  │     │      │     │                   │      │
+//    ├───────────┴─────┼─────┼─────┼─────┼─────┼─────┼─────┼──────┼─────┼──────┼─────┼────────────┬──────┼──────┤
+//    │                 │     │     │     │     │     │     │ mute │     │      │     │            │ volu │      │
+//    ├─────┬─────┬─────┼─────┴─────┴─────┴─────┴─────┴─────┴──────┴─────┼──────┼─────┼─────┬──────┼──────┼──────┤
+//    │     │     │     │                                                │      │     │     │ mprv │ vold │ mnxt │
+//    └─────┴─────┴─────┴────────────────────────────────────────────────┴──────┴─────┘     └──────┴──────┴──────┘
 [1] = LAYOUT_65_ansi_blocker(
-  QK_BOOT , KC_F1   , KC_F2   , KC_F3   , KC_F4   , KC_F5   , KC_F6   , KC_F7   , KC_F8   , KC_F9   , KC_F10  , KC_F11  , KC_F12  , KC_F13                      , KC_TRNS,
-  KC_TRNS           , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_MPLY , KC_TRNS , KC_TRNS , KC_TRNS           , KC_TRNS,
-  KC_TRNS           , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_KAL  , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS                     , KC_TRNS,
-  KC_TRNS                     , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_MUTE , KC_TRNS , KC_TRNS , KC_TRNS ,      KC_TRNS      , KC_VOLU , KC_TRNS,
-  KC_TRNS , KC_TRNS , KC_TRNS ,                                    KC_TRNS                                    , KC_TRNS , KC_TRNS ,           KC_MPRV , KC_VOLD , KC_MNXT
+  KC_GRAVE , KC_F1   , KC_F2   , KC_F3   , KC_F4   , KC_F5   , KC_F6   , KC_F7   , KC_F8   , KC_F9   , KC_F10  , KC_F11  , KC_F12  , KC_F13                      , KC_TRNS,
+  QK_BOOT            , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_MPLY , KC_TRNS , KC_TRNS , KC_TRNS           , KC_TRNS,
+  KC_TRNS            , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_KAL  , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS                     , KC_TRNS,
+  KC_TRNS                      , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_TRNS , KC_MUTE , KC_TRNS , KC_TRNS , KC_TRNS ,      KC_TRNS      , KC_VOLU , KC_TRNS,
+  KC_TRNS  , KC_TRNS , KC_TRNS ,                                    KC_TRNS                                    , KC_TRNS , KC_TRNS ,           KC_MPRV , KC_VOLD , KC_MNXT
 )
 };
 // clang-format on
