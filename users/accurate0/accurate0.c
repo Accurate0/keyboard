@@ -1,7 +1,7 @@
 #include "accurate0.h"
 #include "os_detection.h"
 
-#define KEEPALIVE_TIME_BETWEEN (1 * 60)
+#define KEEPALIVE_TIME_BETWEEN (1 * 60000)
 
 globals_t _globals = {.is_mac_os = false, .keepalive = {.enabled = false}};
 
@@ -20,7 +20,7 @@ void matrix_scan_user(void) {
         _globals.keepalive.last_keepalive = timer_read32();
         // gnome has a keybind for F13...
         if(_globals.is_mac_os) {
-            tap_code(KC_F13);
+            tap_code(KC_F18);
         } else {
             tap_code(KC_F24);
         }
